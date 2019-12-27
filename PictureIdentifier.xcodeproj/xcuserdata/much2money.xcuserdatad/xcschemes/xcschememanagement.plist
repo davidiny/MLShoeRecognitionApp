@@ -7,7 +7,25 @@
 		<key>PictureIdentifier.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>30BCE7FB23B65FB800244BF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30BCE81423B65FC100244BF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30BCE81F23B65FC100244BF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

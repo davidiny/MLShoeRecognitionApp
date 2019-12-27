@@ -1,0 +1,6 @@
+framework module Pods_PictureIdentifier {
+  umbrella header "Pods-PictureIdentifier-umbrella.h"
+
+  export *
+  module * { export * }
+}
