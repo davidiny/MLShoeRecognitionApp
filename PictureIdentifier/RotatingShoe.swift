@@ -12,7 +12,7 @@ import SwiftUI
 struct RotatingShoe: View {
   let image = UIImage.gif(name: "rotating")
     var body: some View {
-      Image(uiImage: image!).frame(width: 310.0, height: 310.0).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10)
+      Image(uiImage: image!).resizable().frame(width: 200.0, height: 200.0).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10)
     }
 }
 
