@@ -7,12 +7,21 @@
 //
 
 import SwiftUI
+import SDWebImage
+import SDWebImageSwiftUI
 
 
 struct RotatingShoe: View {
   let image = UIImage.gif(name: "rotating")
     var body: some View {
-      Image(uiImage: image!).resizable().frame(width: 200.0, height: 200.0).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10)
+      Group {
+        // Network
+        AnimatedImage(url: URL(string: "https://thumbs.gfycat.com/HarmoniousSingleLadybug-size_restricted.gif"))
+        .onFailure(perform: { (error) in
+            // Error
+        }).resizable().frame(width: 200.0, height: 200.0).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10)
+        }
+//      Image(uiImage: image!).resizable().frame(width: 200.0, height: 200.0).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 4)).shadow(radius: 10)
     }
 }
 
