@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+import SDWebImage
 
 struct ProfTabs: View {
     var body: some View {

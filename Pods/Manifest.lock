@@ -1,16 +1,26 @@
 PODS:
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
+  - SDWebImageSwiftUI (0.10.0):
+    - SDWebImage (~> 5.3)
   - SwiftGifOrigin (1.7.0)
 
 DEPENDENCIES:
+  - SDWebImageSwiftUI
   - SwiftGifOrigin (~> 1.7.0)
 
 SPEC REPOS:
   trunk:
+    - SDWebImage
+    - SDWebImageSwiftUI
     - SwiftGifOrigin
 
 SPEC CHECKSUMS:
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  SDWebImageSwiftUI: 56541a8970e6dfad07c48bd03bc411611c644d15
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: e799d79c620770d8f2aa349eafb91f62c92069a1
+PODFILE CHECKSUM: 48a08c96f4e35d9da7762b453ff30e619c873a73
 
 COCOAPODS: 1.8.4

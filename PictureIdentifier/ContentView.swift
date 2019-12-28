@@ -18,33 +18,10 @@ struct ContentView: View {
           VStack(alignment: .leading) {
             ProfTabs()
             ProfTabs()
+            ProfTabs()
           }
-          .offset(y: -200)
+          .offset(y: -180)
           .frame(height: 200)
-          HStack{
-            Button(action:  {
-              
-             
-              
-              }) {
-              RoundedRectangle(cornerRadius: 40)
-                .fill(Color.red)
-                .overlay(
-                  Text("Predict")
-                  .fontWeight(.bold)
-                    .font(.title)
-                    .padding(.all, 11.0)
-                    .background(Color.clear)
-                  .cornerRadius(40)
-                  .foregroundColor(.white)
-                  .padding(10)
-              )
-
-            }
-          }
-          .offset(y: -200)
-          .frame(width: 350, height: 50)
-
         }
   }
 

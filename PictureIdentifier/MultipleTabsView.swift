@@ -16,12 +16,17 @@ struct MultipleTabsView: View {
               Image(systemName: "house.fill")
               Text("Home")
             }
+          PredictionView()
+            .tabItem{
+              Image(systemName: "camera.fill")
+              Text("Predict")
+          }
           GalleryView()
             .tabItem{
               Image(systemName: "photo.fill")
               Text("Gallery")
           }
-        }
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 
