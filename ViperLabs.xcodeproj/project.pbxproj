@@ -11,11 +11,11 @@
 		306FB8AC23B67014007DF48C /* RotatingShoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FB8AB23B67014007DF48C /* RotatingShoe.swift */; };
 		306FB8AE23B6769F007DF48C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FB8AD23B6769F007DF48C /* MapView.swift */; };
 		3071751723B69E6100E6CFC2 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3071751623B69E6100E6CFC2 /* Button.png */; };
+		3071751923B7B76500E6CFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3071751823B7B76500E6CFC2 /* Assets.xcassets */; };
 		30BCE80023B65FB800244BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE7FF23B65FB800244BF6 /* AppDelegate.swift */; };
 		30BCE80223B65FB800244BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE80123B65FB800244BF6 /* SceneDelegate.swift */; };
 		30BCE80523B65FB800244BF6 /* PictureIdentifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE80323B65FB800244BF6 /* PictureIdentifier.xcdatamodeld */; };
 		30BCE80723B65FB800244BF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE80623B65FB800244BF6 /* ContentView.swift */; };
-		30BCE80923B65FC000244BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BCE80823B65FC000244BF6 /* Assets.xcassets */; };
 		30BCE80F23B65FC000244BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BCE80D23B65FC000244BF6 /* LaunchScreen.storyboard */; };
 		30BCE81A23B65FC100244BF6 /* PictureIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE81923B65FC100244BF6 /* PictureIdentifierTests.swift */; };
 		30BCE82523B65FC100244BF6 /* PictureIdentifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCE82423B65FC100244BF6 /* PictureIdentifierUITests.swift */; };
@@ -46,18 +46,18 @@
 		306FB8AB23B67014007DF48C /* RotatingShoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingShoe.swift; sourceTree = "<group>"; };
 		306FB8AD23B6769F007DF48C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3071751623B69E6100E6CFC2 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
-		30BCE7FC23B65FB800244BF6 /* PictureIdentifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureIdentifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3071751823B7B76500E6CFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30BCE7FC23B65FB800244BF6 /* ViperLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BCE7FF23B65FB800244BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30BCE80123B65FB800244BF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30BCE80423B65FB800244BF6 /* PictureIdentifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PictureIdentifier.xcdatamodel; sourceTree = "<group>"; };
 		30BCE80623B65FB800244BF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		30BCE80823B65FC000244BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30BCE80E23B65FC000244BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30BCE81023B65FC100244BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30BCE81523B65FC100244BF6 /* PictureIdentifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureIdentifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BCE81523B65FC100244BF6 /* ViperLabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperLabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BCE81923B65FC100244BF6 /* PictureIdentifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIdentifierTests.swift; sourceTree = "<group>"; };
 		30BCE81B23B65FC100244BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30BCE82023B65FC100244BF6 /* PictureIdentifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureIdentifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BCE82023B65FC100244BF6 /* ViperLabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperLabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BCE82423B65FC100244BF6 /* PictureIdentifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIdentifierUITests.swift; sourceTree = "<group>"; };
 		30BCE82623B65FC100244BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365D88168750F9FB90E91388 /* Pods-PictureIdentifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureIdentifier.release.xcconfig"; path = "Target Support Files/Pods-PictureIdentifier/Pods-PictureIdentifier.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		30BCE7FD23B65FB800244BF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30BCE7FC23B65FB800244BF6 /* PictureIdentifier.app */,
-				30BCE81523B65FC100244BF6 /* PictureIdentifierTests.xctest */,
-				30BCE82023B65FC100244BF6 /* PictureIdentifierUITests.xctest */,
+				30BCE7FC23B65FB800244BF6 /* ViperLabs.app */,
+				30BCE81523B65FC100244BF6 /* ViperLabsTests.xctest */,
+				30BCE82023B65FC100244BF6 /* ViperLabsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +114,7 @@
 		30BCE7FE23B65FB800244BF6 /* PictureIdentifier */ = {
 			isa = PBXGroup;
 			children = (
+				3071751823B7B76500E6CFC2 /* Assets.xcassets */,
 				3071751623B69E6100E6CFC2 /* Button.png */,
 				306FB8AD23B6769F007DF48C /* MapView.swift */,
 				306FB8A823B66CB8007DF48C /* rotating.gif */,
@@ -121,7 +122,6 @@
 				30BCE80123B65FB800244BF6 /* SceneDelegate.swift */,
 				30BCE80623B65FB800244BF6 /* ContentView.swift */,
 				306FB8AB23B67014007DF48C /* RotatingShoe.swift */,
-				30BCE80823B65FC000244BF6 /* Assets.xcassets */,
 				30BCE80D23B65FC000244BF6 /* LaunchScreen.storyboard */,
 				30BCE81023B65FC100244BF6 /* Info.plist */,
 				30BCE80323B65FB800244BF6 /* PictureIdentifier.xcdatamodeld */,
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30BCE7FB23B65FB800244BF6 /* PictureIdentifier */ = {
+		30BCE7FB23B65FB800244BF6 /* ViperLabs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30BCE82923B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifier" */;
+			buildConfigurationList = 30BCE82923B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabs" */;
 			buildPhases = (
 				797A8548BFF75302F7C28570 /* [CP] Check Pods Manifest.lock */,
 				30BCE7F823B65FB800244BF6 /* Sources */,
@@ -181,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = PictureIdentifier;
+			name = ViperLabs;
 			productName = PictureIdentifier;
-			productReference = 30BCE7FC23B65FB800244BF6 /* PictureIdentifier.app */;
+			productReference = 30BCE7FC23B65FB800244BF6 /* ViperLabs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30BCE81423B65FC100244BF6 /* PictureIdentifierTests */ = {
+		30BCE81423B65FC100244BF6 /* ViperLabsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30BCE82C23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifierTests" */;
+			buildConfigurationList = 30BCE82C23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabsTests" */;
 			buildPhases = (
 				30BCE81123B65FC100244BF6 /* Sources */,
 				30BCE81223B65FC100244BF6 /* Frameworks */,
@@ -199,14 +199,14 @@
 			dependencies = (
 				30BCE81723B65FC100244BF6 /* PBXTargetDependency */,
 			);
-			name = PictureIdentifierTests;
+			name = ViperLabsTests;
 			productName = PictureIdentifierTests;
-			productReference = 30BCE81523B65FC100244BF6 /* PictureIdentifierTests.xctest */;
+			productReference = 30BCE81523B65FC100244BF6 /* ViperLabsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		30BCE81F23B65FC100244BF6 /* PictureIdentifierUITests */ = {
+		30BCE81F23B65FC100244BF6 /* ViperLabsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30BCE82F23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifierUITests" */;
+			buildConfigurationList = 30BCE82F23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabsUITests" */;
 			buildPhases = (
 				30BCE81C23B65FC100244BF6 /* Sources */,
 				30BCE81D23B65FC100244BF6 /* Frameworks */,
@@ -217,9 +217,9 @@
 			dependencies = (
 				30BCE82223B65FC100244BF6 /* PBXTargetDependency */,
 			);
-			name = PictureIdentifierUITests;
+			name = ViperLabsUITests;
 			productName = PictureIdentifierUITests;
-			productReference = 30BCE82023B65FC100244BF6 /* PictureIdentifierUITests.xctest */;
+			productReference = 30BCE82023B65FC100244BF6 /* ViperLabsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30BCE7F723B65FB800244BF6 /* Build configuration list for PBXProject "PictureIdentifier" */;
+			buildConfigurationList = 30BCE7F723B65FB800244BF6 /* Build configuration list for PBXProject "ViperLabs" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,9 +258,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30BCE7FB23B65FB800244BF6 /* PictureIdentifier */,
-				30BCE81423B65FC100244BF6 /* PictureIdentifierTests */,
-				30BCE81F23B65FC100244BF6 /* PictureIdentifierUITests */,
+				30BCE7FB23B65FB800244BF6 /* ViperLabs */,
+				30BCE81423B65FC100244BF6 /* ViperLabsTests */,
+				30BCE81F23B65FC100244BF6 /* ViperLabsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,8 +272,8 @@
 			files = (
 				306FB8A923B66CB8007DF48C /* rotating.gif in Resources */,
 				3071751723B69E6100E6CFC2 /* Button.png in Resources */,
+				3071751923B7B76500E6CFC2 /* Assets.xcassets in Resources */,
 				30BCE80F23B65FC000244BF6 /* LaunchScreen.storyboard in Resources */,
-				30BCE80923B65FC000244BF6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +370,12 @@
 /* Begin PBXTargetDependency section */
 		30BCE81723B65FC100244BF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30BCE7FB23B65FB800244BF6 /* PictureIdentifier */;
+			target = 30BCE7FB23B65FB800244BF6 /* ViperLabs */;
 			targetProxy = 30BCE81623B65FC100244BF6 /* PBXContainerItemProxy */;
 		};
 		30BCE82223B65FC100244BF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30BCE7FB23B65FB800244BF6 /* PictureIdentifier */;
+			target = 30BCE7FB23B65FB800244BF6 /* ViperLabs */;
 			targetProxy = 30BCE82123B65FC100244BF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -566,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureIdentifier.app/PictureIdentifier";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperLabs.app/ViperLabs";
 			};
 			name = Debug;
 		};
@@ -588,7 +588,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureIdentifier.app/PictureIdentifier";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperLabs.app/ViperLabs";
 			};
 			name = Release;
 		};
@@ -635,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30BCE7F723B65FB800244BF6 /* Build configuration list for PBXProject "PictureIdentifier" */ = {
+		30BCE7F723B65FB800244BF6 /* Build configuration list for PBXProject "ViperLabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30BCE82723B65FC100244BF6 /* Debug */,
@@ -644,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30BCE82923B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifier" */ = {
+		30BCE82923B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30BCE82A23B65FC100244BF6 /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30BCE82C23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifierTests" */ = {
+		30BCE82C23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30BCE82D23B65FC100244BF6 /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30BCE82F23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "PictureIdentifierUITests" */ = {
+		30BCE82F23B65FC100244BF6 /* Build configuration list for PBXNativeTarget "ViperLabsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30BCE83023B65FC100244BF6 /* Debug */,
