@@ -10,31 +10,36 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
+
+    let locationManager = CLLocationManager()
     
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+           locationManager.startUpdatingLocation()
+        } else {
+           locationManager.requestWhenInUseAuthorization()
+        }
+        let myLatitude = locationManager.location?.coordinate.latitude
+        let myLongitude = locationManager.location?.coordinate.longitude
       
-//        let locationManager = CLLocationManager()
-//        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-//           locationManager.startUpdatingLocation()
-//        } else {
-//           locationManager.requestWhenInUseAuthorization()
-//        }
-//        let myLatitude = locationManager.location?.coordinate.latitude
-//        let myLongitude = locationManager.location?.coordinate.longitude
-//        let coordinate = CLLocationCoordinate2D(
-//            latitude: myLatitude!, longitude: myLongitude!)
-//        let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
-//      let region = MKCoordinateRegion(center: coordinate, span: span)
-//        view.setRegion(region, animated: true)
+      
+      
+      
+      
       
       let coordinate = CLLocationCoordinate2D(
-          latitude: 34.011286, longitude: -116.166868)
-      let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
+        latitude: myLatitude ?? 34.011286, longitude: myLongitude ?? -116.166868)
+      let span = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
       let region = MKCoordinateRegion(center: coordinate, span: span)
+      let pinPoint = MKPointAnnotation()
+      pinPoint.coordinate = coordinate
+      pinPoint.title = "Me"
+      view.addAnnotation(pinPoint)
+  
       view.setRegion(region, animated: true)
     }
 }

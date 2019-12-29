@@ -13,7 +13,7 @@ import SDWebImage
 struct ComingSoonTab: View {
     var body: some View {
       HStack {
-        Image("Logo")
+        Image("Lock")
                    .resizable()
                    .padding()
                    .frame(width: 100, height: 100)
@@ -23,7 +23,8 @@ struct ComingSoonTab: View {
             .multilineTextAlignment(.leading)
             .font(.caption)
         }
-        }.frame(width: 350, height: 75).overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: 1))
+        Spacer()
+      }.frame(width: 350, height: 75).overlay(RoundedRectangle(cornerRadius: 16).stroke(style: StrokeStyle(lineWidth: 1, dash: [11])).foregroundColor(Color.red))
     }
 }
 

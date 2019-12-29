@@ -18,8 +18,8 @@ struct ContentView: View {
           RotatingShoe().frame(height: 300).offset(y: -265).padding(.bottom, -100)
           VStack(alignment: .leading) {
             ProfTabs()
-            ProfTabs()
-            ProfTabs()
+            TakePhotoTab()
+            ComingSoonTab()
           }
           .offset(y: -180)
           .frame(height: 200)

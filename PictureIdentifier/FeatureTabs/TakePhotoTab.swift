@@ -13,7 +13,7 @@ import SDWebImage
 struct TakePhotoTab: View {
     var body: some View {
       HStack {
-        Image("Logo")
+        Image("Phone")
                    .resizable()
                    .padding()
                    .frame(width: 100, height: 100)
@@ -23,6 +23,7 @@ struct TakePhotoTab: View {
             .multilineTextAlignment(.leading)
             .font(.caption)
         }
+        Spacer()
         }.frame(width: 350, height: 75).overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: 1))
     }
 }
