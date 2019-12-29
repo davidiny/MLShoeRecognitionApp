@@ -14,7 +14,7 @@ struct PredictionView: View {
     var body: some View {
         Group {
             // Network
-            AnimatedImage(url: URL(string: "https://66.media.tumblr.com/2e8ffc790d41c38669499bbfe20db0fd/tumblr_ogo3xzbmmW1r6xm5co1_400.gifv"))
+            AnimatedImage(url: URL(string: "https://i.pinimg.com/originals/f0/5b/67/f05b6701811dfd9cfdc96456eadcf1ab.gif"))
             .onFailure(perform: { (error) in
                 // Error
             })
