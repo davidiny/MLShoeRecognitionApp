@@ -9,6 +9,7 @@
 import SwiftUI
 import SwiftGifOrigin
 
+
 struct ContentView: View {
   let predictImage = UIImage(named: "Button")
     var body: some View {
