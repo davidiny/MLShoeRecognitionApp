@@ -16,7 +16,7 @@ struct MultipleTabsView: View {
               Image(systemName: "house.fill")
               Text("Home")
             }
-          PredictionView(pickedImage: <#Image#>)
+          PredictionView()
             .tabItem{
               Image(systemName: "camera.fill")
               Text("Predict")
