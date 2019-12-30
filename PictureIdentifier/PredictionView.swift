@@ -14,31 +14,32 @@ import SDWebImageSwiftUI
 struct PredictionView: View {
    @State var showImagePicker: Bool = false
    @State var showActionSheet: Bool = false
-   @State var image: Image?
+   @State var image: Image? = Image("photoPlaceholder")
    @State var sourceType: Int = 0
-   @State var prediction: String = "What is that shoe?"
+   @State var prediction: String = "Take a picture of a shoe to predict its brand"
  
     var body: some View {
       ZStack {
       VStack{
-        Group {
-            // Network
-            AnimatedImage(url: URL(string: "https://i.pinimg.com/originals/f0/5b/67/f05b6701811dfd9cfdc96456eadcf1ab.gif"))
-            .onFailure(perform: { (error) in
-                // Error
-            })
-          }.edgesIgnoringSafeArea(.top).overlay(
+//        Group {
+//            // Network
+//            AnimatedImage(url: URL(string: "https://i.pinimg.com/originals/f0/5b/67/f05b6701811dfd9cfdc96456eadcf1ab.gif"))
+//            .onFailure(perform: { (error) in
+//                // Error
+//            })
+//          }.edgesIgnoringSafeArea(.top).overlay(
             VStack() {
-              image?.resizable().frame(width: 300, height: 200).cornerRadius(10).offset(y:-100)
+              MapView()
+              ShowImageView(image: image!).offset(y: -120)
               HStack{
-               RoundedRectangle(cornerRadius: 30).fill(Color.white)
-              }.offset(y: 0).frame(width:300, height: 150).overlay(Text(prediction).font(.title).foregroundColor(.red)).offset(y:200)
+               PredictionLabel(label: prediction).offset(y: -100)
+              }
           HStack{
             CameraButtonView(showActionSheet: $showActionSheet)
           }
-          .frame(width: 150, height: 50).offset(y:-100)
+          .frame(width: 150, height: 50).offset(y:-50)
         }
-      )
+//      )
 
       }.actionSheet(isPresented: $showActionSheet) { () -> ActionSheet in
         ActionSheet(title: Text("Select Image"), message: Text("Please select an image from the gallery or use the camera"), buttons: [ActionSheet.Button.default(Text("Camera"), action: {
@@ -54,7 +55,7 @@ struct PredictionView: View {
         if showImagePicker {
           ImagePicker(isVisible: $showImagePicker, image: $image, prediction: $prediction, sourceType: sourceType)
         }
-      }.edgesIgnoringSafeArea(.top).onAppear {self.image = Image("rotating")}
+      }.edgesIgnoringSafeArea(.top)
   }
 
 }
