@@ -27,7 +27,7 @@ struct PredictionView: View {
             })
           }.edgesIgnoringSafeArea(.top).overlay(
             VStack() {
-              image?.resizable().frame(width: 300, height: 200).offset(y: -150)
+              image?.resizable().frame(width: 300, height: 200).cornerRadius(10).offset(y:-150)
           HStack{
             CameraButtonView(showActionSheet: $showActionSheet)
           }
