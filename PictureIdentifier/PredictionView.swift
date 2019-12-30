@@ -10,11 +10,13 @@ import SwiftUI
 import SDWebImage
 import SDWebImageSwiftUI
 
+
 struct PredictionView: View {
    @State var showImagePicker: Bool = false
    @State var showActionSheet: Bool = false
    @State var image: Image?
    @State var sourceType: Int = 0
+   @State var prediction: String = "What is that shoe?"
  
     var body: some View {
       ZStack {
@@ -27,7 +29,10 @@ struct PredictionView: View {
             })
           }.edgesIgnoringSafeArea(.top).overlay(
             VStack() {
-              image?.resizable().frame(width: 300, height: 200).cornerRadius(10).offset(y:-150)
+              image?.resizable().frame(width: 300, height: 200).cornerRadius(10).offset(y:-100)
+              HStack{
+               RoundedRectangle(cornerRadius: 30).fill(Color.white)
+              }.offset(y: 0).frame(width:300, height: 150).overlay(Text(prediction).font(.title).foregroundColor(.red)).offset(y:200)
           HStack{
             CameraButtonView(showActionSheet: $showActionSheet)
           }
@@ -47,11 +52,13 @@ struct PredictionView: View {
         ActionSheet.Button.cancel()]
       )}
         if showImagePicker {
-          ImagePicker(isVisible: $showImagePicker, image: $image, sourceType: sourceType)
+          ImagePicker(isVisible: $showImagePicker, image: $image, prediction: $prediction, sourceType: sourceType)
         }
       }.edgesIgnoringSafeArea(.top).onAppear {self.image = Image("rotating")}
   }
+
 }
+
 
 struct PredictionView_Previews: PreviewProvider {
     static var previews: some View {
