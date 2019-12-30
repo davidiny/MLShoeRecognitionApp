@@ -21,7 +21,7 @@ struct MultipleTabsView: View {
               Image(systemName: "camera.fill")
               Text("Predict")
           }
-          GalleryView()
+          ShoeList()
             .tabItem{
               Image(systemName: "photo.fill")
               Text("Gallery")
