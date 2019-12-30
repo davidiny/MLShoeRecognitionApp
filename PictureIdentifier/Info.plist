@@ -6,6 +6,8 @@
 	<string>Light</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Can we access your location?</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This application needs to use your camera to take pictures</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
