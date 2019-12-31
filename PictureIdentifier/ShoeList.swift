@@ -11,12 +11,12 @@ import SwiftUI
 struct ShoeList: View {
     var body: some View {
       NavigationView {
-        List(landmarkData) { shoe in
-          NavigationLink(destination: ContentView()) {
+        List(shoes) { shoe in
+          NavigationLink(destination: ShoeDetailView(shoe: shoe.name, images: shoe.image!)) {
                 ShoeRow(shoe: shoe)
           }
         
-        }.navigationBarTitle(Text("Navigation"))
+        }.navigationBarTitle(Text("All Shoes"))
       
       }
     }

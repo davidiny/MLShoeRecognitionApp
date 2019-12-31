@@ -29,6 +29,9 @@
 		30186C9223BA607F006D5B2F /* ShoeSleuthModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9123BA607F006D5B2F /* ShoeSleuthModel.mlmodel */; };
 		30186C9423BA92FB006D5B2F /* PredictionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9323BA92FB006D5B2F /* PredictionLabel.swift */; };
 		30186C9623BAA0F0006D5B2F /* ShowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9523BAA0F0006D5B2F /* ShowImageView.swift */; };
+		30186C9A23BAAF3D006D5B2F /* PredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9923BAAF3D006D5B2F /* PredictionModel.swift */; };
+		30186C9E23BAB6E4006D5B2F /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9D23BAB6E4006D5B2F /* ShoeDetailView.swift */; };
+		30186CA023BAC1E1006D5B2F /* ShoeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30186C9F23BAC1E1006D5B2F /* ShoeData.swift */; };
 		306FB8A923B66CB8007DF48C /* rotating.gif in Resources */ = {isa = PBXBuildFile; fileRef = 306FB8A823B66CB8007DF48C /* rotating.gif */; };
 		306FB8AC23B67014007DF48C /* RotatingShoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FB8AB23B67014007DF48C /* RotatingShoe.swift */; };
 		306FB8AE23B6769F007DF48C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FB8AD23B6769F007DF48C /* MapView.swift */; };
@@ -92,6 +95,9 @@
 		30186C9123BA607F006D5B2F /* ShoeSleuthModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ShoeSleuthModel.mlmodel; sourceTree = "<group>"; };
 		30186C9323BA92FB006D5B2F /* PredictionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionLabel.swift; sourceTree = "<group>"; };
 		30186C9523BAA0F0006D5B2F /* ShowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageView.swift; sourceTree = "<group>"; };
+		30186C9923BAAF3D006D5B2F /* PredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionModel.swift; sourceTree = "<group>"; };
+		30186C9D23BAB6E4006D5B2F /* ShoeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
+		30186C9F23BAC1E1006D5B2F /* ShoeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeData.swift; sourceTree = "<group>"; };
 		306FB8A823B66CB8007DF48C /* rotating.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rotating.gif; sourceTree = "<group>"; };
 		306FB8AB23B67014007DF48C /* RotatingShoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingShoe.swift; sourceTree = "<group>"; };
 		306FB8AD23B6769F007DF48C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 			children = (
 				30186C7623BA1FEA006D5B2F /* Data.swift */,
 				30186C7723BA1FEA006D5B2F /* Landmark.swift */,
+				30186C9923BAAF3D006D5B2F /* PredictionModel.swift */,
+				30186C9F23BAC1E1006D5B2F /* ShoeData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				30186C8F23BA4288006D5B2F /* ImagePicker.swift */,
 				30186C9323BA92FB006D5B2F /* PredictionLabel.swift */,
 				30186C9523BAA0F0006D5B2F /* ShowImageView.swift */,
+				30186C9D23BAB6E4006D5B2F /* ShoeDetailView.swift */,
 			);
 			path = PictureIdentifier;
 			sourceTree = "<group>";
@@ -465,7 +474,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30186C9A23BAAF3D006D5B2F /* PredictionModel.swift in Sources */,
 				30186C8823BA2050006D5B2F /* ShoeRow.swift in Sources */,
+				30186CA023BAC1E1006D5B2F /* ShoeData.swift in Sources */,
 				306FB8AC23B67014007DF48C /* RotatingShoe.swift in Sources */,
 				3071751D23B7C7C400E6CFC2 /* MultipleTabsView.swift in Sources */,
 				30186C9023BA4288006D5B2F /* ImagePicker.swift in Sources */,
@@ -476,6 +487,7 @@
 				3071752F23B919E900E6CFC2 /* ComingSoonTab.swift in Sources */,
 				3071753123B919E900E6CFC2 /* ProfTabs.swift in Sources */,
 				3071752323B7E94300E6CFC2 /* PredictionView.swift in Sources */,
+				30186C9E23BAB6E4006D5B2F /* ShoeDetailView.swift in Sources */,
 				30186C9223BA607F006D5B2F /* ShoeSleuthModel.mlmodel in Sources */,
 				30186C8E23BA3C15006D5B2F /* CameraButtonView.swift in Sources */,
 				30186C8623BA1FEA006D5B2F /* Landmark.swift in Sources */,

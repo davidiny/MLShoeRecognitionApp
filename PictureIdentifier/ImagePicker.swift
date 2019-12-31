@@ -17,6 +17,7 @@ struct ImagePicker: UIViewControllerRepresentable {
   @Binding var image: Image?
   @Binding var prediction: String
   var sourceType: Int
+  
 
   
   func makeCoordinator() -> Coordinator {
@@ -42,6 +43,7 @@ struct ImagePicker: UIViewControllerRepresentable {
     @Binding var isVisible: Bool
     @Binding var image: Image?
     @Binding var prediction: String
+    
 
     
     init(isVisible: Binding<Bool>, image: Binding<Image?>, prediction: Binding<String>) {
@@ -152,7 +154,9 @@ struct ImagePicker: UIViewControllerRepresentable {
               self.prediction = "These Might Be UnderArmour shoes"
             }
           }
+          shoes.append(Prediction(id: shoes.count, name: self.prediction, image: self.image))
         }
+   
       }
 
     }
