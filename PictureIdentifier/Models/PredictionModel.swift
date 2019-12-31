@@ -9,9 +9,9 @@ import SwiftUI
 import CoreLocation
 
 struct Prediction: Identifiable {
-    var id: Int
-    var name: String
-    var image: Image?
+  var id: Int = 0
+  var name: String = ""
+  var image: Image?
 //    var coordinates: Coordinate
 //
 //    var locationCoordinate: CLLocationCoordinate2D {

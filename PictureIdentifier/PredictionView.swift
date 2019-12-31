@@ -17,6 +17,7 @@ struct PredictionView: View {
    @State var image: Image? = Image("photoPlaceholder")
    @State var sourceType: Int = 0
    @State var prediction: String = "Take a picture of a shoe to predict its brand"
+  @State var shoes: [Prediction] = []
  
     var body: some View {
       ZStack {

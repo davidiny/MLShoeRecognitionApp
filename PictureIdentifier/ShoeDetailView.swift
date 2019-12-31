@@ -12,16 +12,16 @@ import SDWebImageSwiftUI
 
 
 struct ShoeDetailView: View {
-  var shoe: String
-  var images: Image?
+  var shoe: Prediction
+
  
     var body: some View {
       ZStack {
             VStack() {
               MapView()
-              ShowImageView(image: self.images!).offset(y: -120)
+              ShowImageView(image: self.shoe.image!).offset(y: -120)
               HStack{
-                PredictionLabel(label: self.shoe).offset(y: -100)
+                PredictionLabel(label: self.shoe.name).offset(y: -100)
               }
         }
 //      )
@@ -34,6 +34,6 @@ struct ShoeDetailView: View {
 
 struct ShoeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-      ShoeDetailView(shoe: "Hi", images: Image("photoPlaceholder"))
+      ShoeDetailView(shoe: shoes[0])
     }
 }

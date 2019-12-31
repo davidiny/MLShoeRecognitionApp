@@ -12,7 +12,7 @@ struct ShoeRow: View {
   var shoe: Prediction
     var body: some View {
       HStack {
-        (shoe.image!.resizable()).frame(width: 100, height: 100)
+        shoe.image!.resizable().frame(width: 70, height: 70).padding(.all)
         Text(shoe.name)
         Spacer()
       }

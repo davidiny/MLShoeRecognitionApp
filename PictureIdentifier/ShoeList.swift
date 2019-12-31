@@ -12,12 +12,12 @@ struct ShoeList: View {
     var body: some View {
       NavigationView {
         List(shoes) { shoe in
-          NavigationLink(destination: ShoeDetailView(shoe: shoe.name, images: shoe.image!)) {
+          NavigationLink(destination: ShoeDetailView(shoe: shoe)) {
                 ShoeRow(shoe: shoe)
           }
-        
-        }.navigationBarTitle(Text("All Shoes"))
-      
+
+        }.navigationBarTitle(Text("Trending Shoes"))
+
       }
     }
 }

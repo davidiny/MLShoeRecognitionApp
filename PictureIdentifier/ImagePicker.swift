@@ -12,6 +12,8 @@ import CoreML
 import Vision
 import ImageIO
 
+
+
 struct ImagePicker: UIViewControllerRepresentable {
   @Binding var isVisible: Bool
   @Binding var image: Image?
@@ -56,6 +58,7 @@ struct ImagePicker: UIViewControllerRepresentable {
       let uiimage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
       
       updateClassifications(for: uiimage)
+      print("im updating themmmmmmmmm")
       image = Image(uiImage: uiimage)
       isVisible = false
     }
@@ -154,14 +157,23 @@ struct ImagePicker: UIViewControllerRepresentable {
               self.prediction = "These Might Be UnderArmour shoes"
             }
           }
-          shoes.append(Prediction(id: shoes.count, name: self.prediction, image: self.image))
+
         }
+//        shoes.append(Prediction(id: shoes.count, name: self.prediction))
+//        names.append(shoes[shoes.count - 1].name)
+//        let list:NSArray = shoes as NSArray
+//        UserDefaults.standard.setValue(list, forKey: "shoes")
+//
+//        print("oh yeahhhhhhhhh")
+//        print(shoes.count)
    
       }
 
     }
     
   }
+  
+  
   
   
 

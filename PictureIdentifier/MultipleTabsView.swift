@@ -24,7 +24,7 @@ struct MultipleTabsView: View {
           ShoeList()
             .tabItem{
               Image(systemName: "photo.fill")
-              Text("Gallery")
+              Text("Trending")
           }
         }.edgesIgnoringSafeArea(.top)
     }
